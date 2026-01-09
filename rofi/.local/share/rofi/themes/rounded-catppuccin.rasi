@@ -62,12 +62,12 @@ inputbar {
 }
 
 prompt {
-    text-color: @fg2;
+    text-color: @fg0;
 }
 
 entry {
     placeholder:        "Search";
-    placeholder-color:  @fg3;
+    placeholder-color:  @bg1;
 }
 
 message {
