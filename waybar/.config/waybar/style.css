@@ -28,7 +28,8 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-  background-color: @red;
+  color: @red;
+  background-color: alpha(@crust, 0.4);
   border: none;
 }
 
