@@ -68,7 +68,7 @@ window#osd trough {
   min-height: inherit;
   border-radius: inherit;
   border: none;
-  background: alpha(@pink, 0.6);
+  background: alpha(@mauve, 0.6);
 }
 
 window#osd progress {
