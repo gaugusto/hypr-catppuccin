@@ -166,7 +166,8 @@
           "car": "",
           "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click-right": "pavucontrol",
+	"on-click": "~/.local/bin/audio-selector.sh",
     },
     "custom/notification": {
       "tooltip": true,
