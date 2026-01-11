@@ -11,6 +11,16 @@ window#waybar {
   border: none;
 }
 
+tooltip {
+  border-radius: 10px;
+  background-color: alpha(@crust, 0.4);
+}
+
+tooltip label {
+  color: @text;
+  padding: 15px;
+}
+
 #workspaces button {
   padding: 0 16px;
   background: transparent;
