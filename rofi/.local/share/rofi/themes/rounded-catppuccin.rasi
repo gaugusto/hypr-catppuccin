@@ -26,7 +26,8 @@
 /* Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    font:   "JetBrainsMono Nerd Font Propo 12";
+    // font:   "JetBrainsMono Nerd Font Propo 12";
+    font: "Adwaita 12";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -116,6 +117,7 @@ element-icon {
 
 element-text {
     text-color: inherit;
+    markup: true;
 }
 
 element selected {
