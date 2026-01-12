@@ -122,11 +122,11 @@
             "warning": 30,
             "critical": 15
       },
-      "format": "{capacity}% {icon}",
-      "format-full": "{capacity}% {icon}",
+      "format": "{icon}",
+      "format-full": "{icon}",
       "format-charging": "󰚥",
-      "format-plugged": "{capacity}% 󰚥",
-      "format-alt": "{time} {icon}",
+      "format-plugged": "󰚥",
+      "format-alt": "{capacity}% {icon}",
       "format-icons": ["", "", "", "", ""]
     },
     "power-profiles-daemon": {

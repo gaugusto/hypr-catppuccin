@@ -21,3 +21,5 @@ FULL_PATH="$DIR/$CHOICE"
 # hyprctl hyprpaper wallpaper ",$FULL_PATH"
 
 hyprctl hyprpaper wallpaper ",$FULL_PATH,cover"
+
+notify-send "Wallpaper changed" "New wallpaper: $CHOICE"
