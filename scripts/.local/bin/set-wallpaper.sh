@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Diretório das imagens
-DIR="$HOME/Imagens/catppuccin-wallpapers/landscapes"
+DIR="$HOME/.config/backgrounds"
 
 # Lista os arquivos, remove o caminho completo para exibir apenas o nome no menu
 # e armazena a escolha do usuário
-CHOICE=$(ls "$DIR" | walker -d)
+CHOICE=$(ls "$DIR" | walker -d -H)
 
 # Se o usuário cancelar (ESC), o script encerra
 if [ -z "$CHOICE" ]; then
