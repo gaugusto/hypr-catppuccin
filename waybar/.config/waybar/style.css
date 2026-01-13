@@ -1,14 +1,14 @@
 @import "./mocha.css";
 
 * {
-  font-family: "Adwaita Sans","JetBrainsMono Nerd Font Propo", monospace;
+  font-family: "JetBrainsMono Nerd Font Propo", monospace;
   font-size: 16px;
   font-weight: 600;
 }
 
 window#waybar {
   background-color: transparent;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: none;
 }
 
@@ -31,7 +31,7 @@ tooltip label {
   padding: 0 16px;
   background: alpha(@crust, 0.6);
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0 5px;
   color: alpha(@teal, 0.2);
 }
@@ -73,7 +73,7 @@ tooltip label {
 #tray,
 #custom-notification {
   padding: 0 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: alpha(@crust, 0.6);
 }
 
