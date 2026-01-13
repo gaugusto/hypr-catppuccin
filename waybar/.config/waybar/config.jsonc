@@ -61,7 +61,7 @@
       }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 21,
         "spacing": 10,
         // "icons": {
         //   "blueman": "bluetooth",
@@ -73,7 +73,7 @@
       "format-alt": "{:%I:%M %p - %Y-%m-%d}",
       "tooltip-format": "<tt><small>{calendar}</small></tt>",
       "calendar": {
-        "mode": "mouth",
+        "mode": "month",
         "mode-mon-col": 3,
       // "weeks-pos": "right",
       "on-scroll": 1,
@@ -143,11 +143,11 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
-	      "on-click": "kitty -e wlctl",
         "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
+        "tooltip-format": "{ifname} via {gwaddr}",
+	      "on-click": "kitty -e wlctl",
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -168,7 +168,7 @@
           "default": ["", "", ""]
         },
         "on-click-right": "pavucontrol",
-	"on-click": "~/.local/bin/audio-selector.sh",
+	      "on-click": "~/.local/bin/audio-selector.sh",
     },
     "custom/notification": {
       "tooltip": true,
@@ -189,6 +189,7 @@
       "on-click": "swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
       "escape": true
-    },
+    }
+  }
 }
 
