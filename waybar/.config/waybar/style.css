@@ -31,7 +31,8 @@ tooltip label {
   padding: 0 16px;
   background: alpha(@crust, 0.6);
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
+  min-width: 25px;
   margin: 0 5px;
   color: alpha(@teal, 0.2);
 }
@@ -73,8 +74,9 @@ tooltip label {
 #tray,
 #custom-notification {
   padding: 0 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: alpha(@crust, 0.6);
+  min-width: 25px;
 }
 
 #idle_inhibitor:hover,
