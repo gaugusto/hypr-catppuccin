@@ -5,22 +5,33 @@ set -e
 
 PACKAGES=(
   adapta-gtk-theme
+  adw-gtk-theme
   ast-grep
-  base-devel
+  base
   bluez-utils
   brightnessctl
   btop-theme-catppuccin
   cantarell-fonts
-  catppuccin-cursors-mochaca
+  catppuccin-cursors-mocha
   catppuccin-gtk-theme-mocha
   cliphist
+  dconf-editor
+  efibootmgr
+  elephant
+  elephant-archlinuxpkgs
+  elephant-calc
+  elephant-clipboard
+  elephant-desktopapplications
+  elephant-files
+  elephant-runner
+  elephant-symbols
+  elephant-unicode
+  elephant-windows
   eza
   fastfetch
-  fd
   firefox
   fzf
-  gnome-calculator
-  gnome-disk-utility
+  flatpak
   gnome-software
   hypridle
   hyprlauncher
@@ -32,26 +43,33 @@ PACKAGES=(
   lazygit
   loupe
   luarocks
-  nautilus
-  networkmanager-dmenu
+  materia-gtk-theme
+  nautilus-open-any-terminal
+  nitch
   nvtop
   nwg-look
+  nwg-shell-wallpapers
   papers
+  plymouth
+  plymouth-theme-catppuccin-mocha-git
   polkit-gnome
   power-profiles-daemon
   ripgrep
-  rofi-calc
-  rofi-emoji
-  rofi-pass
+  sbctl
   showtime
+  spotify-launcher
   stow
   stylua
   swaync
   swayosd
+  system-config-printer
+  timeshift
   ttf-jetbrains-mono-nerd
+  walker
   waybar
   wget
-  flatpak
+  wlctl-bin
+  yay
 )
 
 sudo pacman -Syy
