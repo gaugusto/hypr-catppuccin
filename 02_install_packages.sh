@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Aborta o script em caso de erro
+set -e
+
 PACKAGES=(
   adapta-gtk-theme
   ast-grep
@@ -54,5 +57,5 @@ PACKAGES=(
 sudo pacman -Syy
 
 for package in "${PACKAGES[@]}"; do
-  sudo pacman -S --noconfirm --needed "$package"
+  yay -S --noconfirm --needed "$package"
 done
