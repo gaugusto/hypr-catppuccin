@@ -69,7 +69,10 @@ PACKAGES=(
   waybar
   wget
   wlctl-bin
-  yay
+  nvim
+  greetd
+  gredtd-regreet
+  bash-completion
 )
 
 sudo pacman -Syy
