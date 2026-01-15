@@ -14,7 +14,7 @@ window#waybar {
 
 tooltip {
   border-radius: 10px;
-  background-color: alpha(@crust, 0.4);
+  background-color: alpha(@crust, 0.9);
 }
 
 tooltip label {
@@ -23,26 +23,31 @@ tooltip label {
 }
 
 #workspaces {
-  /* background-color: @red; */
-  /* padding: 5px 0px; */
+  margin-left: 10px;
+  background-color: alpha(@crust, 0.6);
+  border-radius: 100px;
+  padding: 0 10px;
 }
 
 #workspaces button {
   padding: 0 16px;
-  background-color: alpha(@crust, 0.6);
+  background-color: alpha(@mauve, 0.3);
   border: none;
-  border-radius: 15px;
-  min-width: 25px;
-  margin: 0 5px;
+  border-radius: 100px;
+  min-width: 20px;
+  margin: 4px 4px;
   color: transparent;
   /* color: alpha(@crust, 0.6); */
+  transition: all 0.3s ease-in-out
 }
 
 #workspaces button.focused,
 #workspaces button.active {
   color: @mauve;
-  background-color: alpha(@crust, 0.6);
+  background-color: darker(@mauve);
   border: none;
+  min-width: 40px;
+  margin: 4px 4px;
 }
 
 #workspaces button.urgent {
@@ -56,9 +61,10 @@ tooltip label {
   background: inherit;
   text-shadow: inherit;
 
-  background-color: @base;
-  color: alpha(@red, 0.8);
+  background-color: @mauve;
+  color: alpha(@mauve, 0.8);
   border: none;
+  min-width: 40px;
 }
 
 #idle_inhibitor,

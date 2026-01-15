@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Aborta o script em caso de erro
-set -e
+#set -e
 
 PACKAGES=(
   adapta-gtk-theme
@@ -10,29 +10,15 @@ PACKAGES=(
   base
   bluez-utils
   brightnessctl
-  btop-theme-catppuccin
   cantarell-fonts
-  catppuccin-cursors-mocha
-  catppuccin-gtk-theme-mocha
   cliphist
   dconf-editor
   efibootmgr
-  elephant
-  elephant-archlinuxpkgs
-  elephant-calc
-  elephant-clipboard
-  elephant-desktopapplications
-  elephant-files
-  elephant-runner
-  elephant-symbols
-  elephant-unicode
-  elephant-windows
   eza
   fastfetch
   firefox
   fzf
   flatpak
-  gnome-software
   hypridle
   hyprlauncher
   hyprlock
@@ -44,14 +30,11 @@ PACKAGES=(
   loupe
   luarocks
   materia-gtk-theme
-  nautilus-open-any-terminal
-  nitch
   nvtop
   nwg-look
   nwg-shell-wallpapers
   papers
   plymouth
-  plymouth-theme-catppuccin-mocha-git
   polkit-gnome
   power-profiles-daemon
   ripgrep
@@ -65,17 +48,33 @@ PACKAGES=(
   system-config-printer
   timeshift
   ttf-jetbrains-mono-nerd
-  walker
   waybar
   wget
-  wlctl-bin
   nvim
   greetd
   gredtd-regreet
   bash-completion
+  elephant
+  elephant-archlinuxpkgs
+  elephant-calc
+  elephant-clipboard
+  elephant-desktopapplications
+  elephant-files
+  elephant-runner
+  elephant-symbols
+  elephant-unicode
+  elephant-windows
+  wlctl-bin
+  walker
+  plymouth-theme-catppuccin-mocha-git#
+  nautilus-open-any-terminal
+  nitch#
+  catppuccin-cursors-mocha
+  catppuccin-gtk-theme-mocha
+  btop-theme-catppuccin
 )
 
-sudo pacman -Syy
+sudo pacman -Sy
 
 for package in "${PACKAGES[@]}"; do
   yay -S --noconfirm --needed "$package"
