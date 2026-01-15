@@ -3,7 +3,7 @@
 * {
   font-family: "JetBrainsMono Nerd Font Propo", monospace;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 window#waybar {
@@ -23,14 +23,14 @@ tooltip label {
 }
 
 #workspaces {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   background-color: alpha(@crust, 0.6);
   border-radius: 100px;
   padding: 0 10px;
 }
 
 #workspaces button {
-  padding: 0 16px;
+  padding: 0 10px;
   background-color: alpha(@mauve, 0.3);
   border: none;
   border-radius: 100px;
@@ -65,6 +65,11 @@ tooltip label {
   color: alpha(@mauve, 0.8);
   border: none;
   min-width: 40px;
+}
+
+#memory,
+#cpu {
+  margin-right: 10px;
 }
 
 #idle_inhibitor,

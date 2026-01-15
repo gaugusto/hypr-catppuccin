@@ -54,6 +54,8 @@ PACKAGES=(
   greetd
   greetd-regreet
   bash-completion
+  rust-src
+  rust-analyzer
 )
 
 sudo pacman -Sy
