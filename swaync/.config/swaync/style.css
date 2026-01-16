@@ -1,8 +1,10 @@
+@import "../waybar/mocha.css";
+
 :root {
   --border-radius: 22px;
   --cc-bg: transparent;
 
-  --widget-background: alpha(#11111b, 0.6);
+  --widget-background: alpha(@mantle, 0.6);
   --noti-bg-alpha: 0.6;
 
   --padding: calc(var(--border-radius) / 2);
@@ -25,8 +27,24 @@
   padding: var(--border-radius);
 }
 
+.notification {
+  border-radius: 12px;
+  margin: 6px 12px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7),
+    0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  background-color: @mantle;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  -gtk-icon-effect: none;
+  background-color: @crust;
+}
+
 .notification-group {
   border-radius: var(--border-radius);
+  background-color: @base;
   padding: 8px;
 }
 
