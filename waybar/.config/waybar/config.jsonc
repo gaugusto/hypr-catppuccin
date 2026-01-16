@@ -59,9 +59,9 @@
       "active": "",
       "default": "",
     },
-    "persistent-workspaces": {
-      "*": 5
-    },
+    // "persistent-workspaces": {
+    //   "*": 5
+    // },
   },
   "keyboard-state": {
     "numlock": true,
