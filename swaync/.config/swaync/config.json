@@ -1,6 +1,5 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-
   "positionX": "center",
   "positionY": "top",
   "control-center-positionX": "none",
@@ -13,7 +12,6 @@
   "control-center-height": -1,
   "fit-to-screen": false,
   "layer-shell-cover-screen": true,
-
   "layer-shell": true,
   "layer": "overlay",
   "control-center-layer": "overlay",
@@ -31,7 +29,6 @@
   "hide-on-clear": true,
   "hide-on-action": true,
   "script-fail-notify": true,
-
   "widgets": [
     "inhibitors",
     "dnd",
