@@ -7,8 +7,9 @@
 }
 
 window#waybar {
-  background-color: transparent;
-  /* border-radius: 10px; */
+  /* background-color: transparent; */
+  background-color: lighter(@crust);
+  border-radius: 100px;
   border: none;
 }
 
@@ -24,25 +25,27 @@ tooltip label {
 
 #workspaces {
   /* margin-left: 10px; */
-  background-color: alpha(@crust, 0.8);
-  border-radius: 10px;
+  background-color: lighter(@base);
+  border-radius: 100px;
   padding: 0 10px;
-
+  margin: 5px 0;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  background-color: alpha(@mauve, 0.3);
+  padding: 0 10px;
+  background-color: alpha(@overlay2, 0.8);
   border: none;
   border-radius: 10px;
   min-width: 20px;
-  margin: 5px 4px;
+  margin: 4px 4px;
+  color: transparent;
   transition: all 0.3s ease-in-out
 }
 
 #workspaces button.focused,
 #workspaces button.active {
-  background-color: alpha(@flamingo, 0.6);
+  color: @mauve;
+  background-color: @green;
   border: none;
   min-width: 40px;
   margin: 5px 4px;
@@ -60,15 +63,10 @@ tooltip label {
   background: inherit;
   text-shadow: inherit;
 
-  background-color: alpha(@rosewater, 0.6);
+  background-color: alpha(@rosewater, 0.8);
   color: alpha(@mauve, 0.8);
   border: none;
   min-width: 40px;
-}
-
-#memory,
-#cpu {
-  margin-right: 10px;
 }
 
 #idle_inhibitor,
@@ -85,8 +83,9 @@ tooltip label {
 #tray,
 #custom-notification {
   padding: 0 10px;
-  border-radius: 10px;
-  background-color: alpha(@crust, 0.8);
+  margin: 5px 0;
+  border-radius: 15px;
+  background-color: lighter(@base);
   min-width: 25px;
 }
 
@@ -149,6 +148,7 @@ tooltip label {
 
 #clock {
   color: @sapphire;
+  margin-left: 10px;
 }
 
 #tray {

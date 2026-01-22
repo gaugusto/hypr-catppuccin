@@ -3,9 +3,9 @@
   "layer": "top",
   "margin-top": 5,
   "position": "top",
-  "height": 35,
-  // "width": 900,
-  "spacing": 9,
+  // "height": 35,
+  "width": 100,
+  "spacing": 10,
   "modules-left": [
   ],
   "modules-center": [
@@ -15,28 +15,18 @@
     "network",
     "idle_inhibitor",
     "power-profiles-daemon",
+    "hyprland/workspaces",
+    "cpu",
+    "memory",
     "backlight",
-    "group/hardware",
+    "battery",
     "custom/notification",
     "tray",
   ],
   "modules-right": [
 
   ],
-  "group/hardware": {
-		"orientation": "inherit",
-    "drawer": {
-        "transition-duration": 500,
-        "children-class": "not-power",
-        "transition-left-to-right": false,
-    },
-		"modules": [
-			"battery",
-			"cpu",
-			"memory"
-		]
-	},
-  // Modules configuration
+    // Modules configuration
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
