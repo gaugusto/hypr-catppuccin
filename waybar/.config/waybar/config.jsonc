@@ -10,7 +10,6 @@
   ],
   "modules-center": [
     "clock",
-    "hyprland/workspaces",
     "pulseaudio",
     "network",
     "idle_inhibitor",
