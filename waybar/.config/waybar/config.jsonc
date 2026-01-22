@@ -75,10 +75,10 @@
     // }
   },
   "clock": {
-    "format": "{:%a, %b %d, %Y - %I:%M %p}",
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%a, %b %d, %Y - %I:%M %p}",
     "locale": "pt_BR.UTF-8",
     "timezone": "America/Sao_Paulo",
-    "format-alt": "{:%I:%M %p - %Y-%m-%d}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
