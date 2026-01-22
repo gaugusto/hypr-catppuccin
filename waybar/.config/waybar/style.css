@@ -70,7 +70,7 @@ tooltip label {
 }
 
 #idle_inhibitor,
-#pulseaudio,
+#wireplumber,
 #network,
 #power-profiles-daemon,
 #cpu,
@@ -91,7 +91,7 @@ tooltip label {
 }
 
 #idle_inhibitor:hover,
-#pulseaudio:hover,
+#wireplumber:hover,
 #network:hover,
 #power-profiles-daemon:hover,
 #cpu:hover,
@@ -112,7 +112,7 @@ tooltip label {
   color: @pink;
 }
 
-#pulseaudio {
+#wireplumber {
   color: @mauve;
 }
 

@@ -11,7 +11,7 @@
   "modules-center": [
     "hyprland/workspaces",
     "idle_inhibitor",
-    "pulseaudio",
+    "wireplumber",
     "network",
     "power-profiles-daemon",
     "backlight",
@@ -201,6 +201,13 @@
   "custom/power": {
     "format": "⏻",
     "on-click": "~/.local/bin/logout-menu.sh"
+  },
+  "wireplumber": {
+    "format": "{icon}",
+    "format-muted": "",
+    "on-click-right": "pavucontrol",
+    "on-click": "~/.local/bin/audio-selector.sh",
+    "format-icons": ["", "", ""]
   }
 }
 
