@@ -9,23 +9,24 @@
   "modules-left": [
   ],
   "modules-center": [
-    "clock",
+    "hyprland/workspaces",
+    "idle_inhibitor",
     "pulseaudio",
     "network",
-    "idle_inhibitor",
     "power-profiles-daemon",
-    "hyprland/workspaces",
+    "backlight",
+    "tray",
     "cpu",
     "memory",
-    "backlight",
     "battery",
+    "clock",
     "custom/notification",
-    "tray",
+    "custom/power"
   ],
   "modules-right": [
 
   ],
-    // Modules configuration
+  // Modules configuration
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -196,7 +197,10 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "~/.local/bin/logout-menu.sh"
   }
-}
 }
 

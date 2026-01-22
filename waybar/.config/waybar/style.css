@@ -24,11 +24,11 @@ tooltip label {
 }
 
 #workspaces {
-  /* margin-left: 10px; */
   background-color: lighter(@base);
   border-radius: 100px;
   padding: 0 10px;
   margin: 5px 0;
+  margin-left: 10px;
 }
 
 #workspaces button {
@@ -81,7 +81,8 @@ tooltip label {
 #battery,
 #clock,
 #tray,
-#custom-notification {
+#custom-notification,
+#custom-power {
   padding: 0 10px;
   margin: 5px 0;
   border-radius: 15px;
@@ -101,7 +102,8 @@ tooltip label {
 #battery:hover,
 #clock:hover,
 #tray:hover,
-#custom-notification:hover {
+#custom-notification:hover,
+#custom-power:hover {
   color: @text;
   background-color: @base;
 }
@@ -148,7 +150,6 @@ tooltip label {
 
 #clock {
   color: @sapphire;
-  margin-left: 10px;
 }
 
 #tray {
@@ -157,5 +158,9 @@ tooltip label {
 
 #custom-notification {
   color: @lavender;
+}
+
+#custom-power {
+  color: @rosewater;
   margin-right: 10px;
 }
