@@ -79,7 +79,7 @@
     "locale": "pt_BR.UTF-8",
     "timezone": "America/Sao_Paulo",
     "format-alt": "{:%I:%M %p - %Y-%m-%d}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
