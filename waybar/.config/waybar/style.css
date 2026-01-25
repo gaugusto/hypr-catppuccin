@@ -51,7 +51,7 @@ button:hover {
 
 #workspaces button {
   background-color: @base;
-  color: lighter(@rosewater);
+  color: @rosewater;
   border-radius: 100px;
   margin: 3px 5px;
   min-width: 30px;
@@ -78,24 +78,6 @@ button:hover {
   background-color: #eb4d4b;
 }
 
-/* #custom-drawer, */
-/* #idle_inhibitor, */
-/* #pulseaudio, */
-/* #network, */
-/* #power-profiles-daemon, */
-/* #cpu, */
-/* #memory, */
-/* #tray, */
-/* #clock, */
-/* #custom-notification, */
-/* #custom-power { */
-/*   padding: 3px 10px; */
-/*   margin: 3px 0; */
-/*   border-radius: 100px; */
-/*   background-color: darker(@surface_bright); */
-/*   color: lighter(@primary); */
-/* } */
-
 #principal #custom-drawer,
 #principal #idle_inhibitor,
 #principal #wireplumber,
@@ -114,7 +96,7 @@ button:hover {
   margin: 3px 5px;
   border-radius: 100px;
   background-color: @base;
-  color: lighter(@text);
+  color: lighter(@rosewater);
 }
 
 #principal #custom-drawer:hover,
