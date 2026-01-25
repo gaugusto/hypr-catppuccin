@@ -18,6 +18,8 @@
   ],
   "modules-right": [
     "group/principal",
+    "battery",
+    "network",
     "tray",
     "mpd",
     "custom/notification",
@@ -49,12 +51,10 @@
     "modules": [
       "custom/drawer",
       "idle_inhibitor",
-      "network",
       "power-profiles-daemon",
       "cpu",
       "memory",
       "backlight",
-      "battery",
       "temperature",
       "wireplumber"
     ]
@@ -159,7 +159,7 @@
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "󰈂",
     "tooltip-format": "{ifname} via {gwaddr}",
-    "on-click": "networkmanager_dmenu"
+    "on-click": "kitty -e wlctl"
   },
   "wireplumber": {
     "format": "{icon}",
