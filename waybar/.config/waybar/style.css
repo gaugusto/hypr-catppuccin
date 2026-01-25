@@ -1,21 +1,21 @@
 @import "./mocha.css";
 
 * {
-  font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", monospace;
-  font-size: 1rem;
-  font-weight: 700;
-}
+  font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
 
-window#waybar {
-  /* background-color: transparent; */
-  background-color: lighter(@crust);
-  border-radius: 100px;
   border: none;
+  border-radius: 0px;
+
+  min-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 tooltip {
   border-radius: 10px;
-  background-color: alpha(@crust, 0.9);
+  background-color: alpha(@base, 0.9);
 }
 
 tooltip label {
@@ -23,39 +23,38 @@ tooltip label {
   padding: 15px;
 }
 
-#workspaces {
-  background-color: lighter(@base);
+window#waybar {
+  background-color: alpha(@mantle, 0.9);
   border-radius: 100px;
-  padding: 0 10px;
-  margin: 5px 0;
-  margin-left: 10px;
+  border: none;
+}
+
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  /* box-shadow: inset 0 -3px transparent; */
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 100px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+  background: inherit;
+  /* box-shadow: inset 0 -3px @primary; */
+}
+
+#workspaces {
+  margin: 0 5px;
+  background-color: transparent;
+  border-radius: 100px;
 }
 
 #workspaces button {
-  padding: 0 10px;
-  background-color: alpha(@overlay2, 0.8);
-  border: none;
+  background-color: @base;
+  color: lighter(@rosewater);
   border-radius: 100px;
-  min-width: 20px;
-  margin: 4px 4px;
-  color: transparent;
-  transition: all 0.3s ease-in-out
-}
-
-#workspaces button.focused,
-#workspaces button.active {
-  color: @mauve;
-  background-color: darker(@rosewater);
-  border: none;
-  min-width: 40px;
-  margin: 5px 4px;
-  color: @mauve;
-}
-
-#workspaces button.urgent {
-  color: @red;
-  background-color: alpha(@crust, 0.4);
-  border: none;
+  margin: 3px 5px;
+  min-width: 30px;
 }
 
 #workspaces button:hover {
@@ -63,104 +62,116 @@ tooltip label {
   background: inherit;
   text-shadow: inherit;
 
-  background-color: alpha(@rosewater, 0.8);
-  color: alpha(@mauve, 0.8);
-  border: none;
-  min-width: 40px;
+  background-color: darker(@mauve);
+  min-width: 65px;
+  transition: all 0.3s ease-in-out
 }
 
-#idle_inhibitor,
-#wireplumber,
-#network,
-#power-profiles-daemon,
-#cpu,
-#memory,
-#temperature,
-#backlight,
-#keyboard-state,
-#battery,
-#clock,
+#workspaces button.focused,
+#workspaces button.active {
+  background-color: darker(@mauve);
+  min-width: 65px;
+  transition: all 0.3s ease-in-out
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+/* #custom-drawer, */
+/* #idle_inhibitor, */
+/* #pulseaudio, */
+/* #network, */
+/* #power-profiles-daemon, */
+/* #cpu, */
+/* #memory, */
+/* #tray, */
+/* #clock, */
+/* #custom-notification, */
+/* #custom-power { */
+/*   padding: 3px 10px; */
+/*   margin: 3px 0; */
+/*   border-radius: 100px; */
+/*   background-color: darker(@surface_bright); */
+/*   color: lighter(@primary); */
+/* } */
+
+#principal #custom-drawer,
+#principal #idle_inhibitor,
+#principal #wireplumber,
+#principal #network,
+#principal #power-profiles-daemon,
+#principal #cpu,
+#principal #memory,
+#principal #backlight,
+#principal #battery,
+#principal #temperature,
 #tray,
+#clock,
 #custom-notification,
 #custom-power {
-  padding: 0 10px;
-  margin: 5px 0;
-  border-radius: 15px;
-  background-color: lighter(@base);
-  min-width: 25px;
+  padding: 3px 10px;
+  margin: 3px 5px;
+  border-radius: 100px;
+  background-color: @base;
+  color: lighter(@text);
 }
 
-#idle_inhibitor:hover,
-#wireplumber:hover,
-#network:hover,
-#power-profiles-daemon:hover,
-#cpu:hover,
-#memory:hover,
-#temperature:hover,
-#backlight:hover,
-#keyboard-state:hover,
-#battery:hover,
-#clock:hover,
+#principal #custom-drawer:hover,
+#principal #idle_inhibitor:hover,
+#principal #wireplumber:hover,
+#principal #network:hover,
+#principal #power-profiles-daemon:hover,
+#principal #cpu:hover,
+#principal #memory:hover,
+#principal #backlight:hover,
+#principal #battery:hover,
+#principal #temperature:hover,
 #tray:hover,
+#clock:hover,
 #custom-notification:hover,
 #custom-power:hover {
-  color: @text;
-  background-color: @base;
-}
-
-#idle_inhibitor {
-  color: @pink;
-}
-
-#wireplumber {
-  color: @mauve;
-}
-
-#network {
-  color: @red;
-}
-
-#power-profiles-daemon {
-  color: @maroon;
-}
-
-#cpu {
-  color: @peach;
-}
-
-#memory {
-  color: @yellow;
-}
-
-#temperature {
-  color: @green;
-}
-
-#backlight {
-  color: @green;
-}
-
-#keyboard-state {
-  color: @teal;
-}
-
-#battery {
-  color: @sky;
-}
-
-#clock {
-  color: @sapphire;
-}
-
-#tray {
-  color: @blue;
-}
-
-#custom-notification {
-  color: @lavender;
+  background-color: darker(@mauve);
 }
 
 #custom-power {
-  color: @rosewater;
-  margin-right: 10px;
+  margin-right: 15px;
 }
+
+
+/* #power-profiles-daemon.performance { */
+/*     background-color: darker(#f53c3c); */
+/* } */
+/**/
+/* #power-profiles-daemon.balanced { */
+/*     background-color: darker(#2980b9); */
+/* } */
+/**/
+/* #power-profiles-daemon.power-saver { */
+/*     background-color: darker(#2ecc71); */
+/* } */
+
+
+/* #network.disconnected { */
+/*     background-color: #f53c3c; */
+/* } */
+/**/
+/* #pulseaudio.muted { */
+/*     background-color: #90b1b1; */
+/*     color: #2a5c45; */
+/* } */
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#idle_inhibitor.activated {
+  background-color: darker(@mauve);
+  color: @text;
+}
+
