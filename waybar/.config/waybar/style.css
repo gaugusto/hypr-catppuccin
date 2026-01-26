@@ -62,14 +62,16 @@ button:hover {
   background: inherit;
   text-shadow: inherit;
 
-  background-color: darker(@mauve);
+  background-color: alpha(@text, 0.6);
+  color: @crust;
   min-width: 65px;
   transition: all 0.3s ease-in-out
 }
 
 #workspaces button.focused,
 #workspaces button.active {
-  background-color: darker(@mauve);
+  background-color: alpha(@text, 0.6);
+  color: @crust;
   min-width: 65px;
   transition: all 0.3s ease-in-out
 }
@@ -113,7 +115,8 @@ button:hover {
 #clock:hover,
 #custom-notification:hover,
 #custom-power:hover {
-  background-color: darker(@mauve);
+  background-color: alpha(@text, 0.6);
+  color: @crust;
 }
 
 #custom-power {
