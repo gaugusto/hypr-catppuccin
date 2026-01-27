@@ -11,7 +11,7 @@
   //"spacing": 10, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "hyprland/workspaces"
+    "ext/workspaces"
   ],
   "modules-center": [
     "clock"
@@ -26,7 +26,7 @@
     "custom/power"
   ],
   // Modules configuration
-  "hyprland/workspaces": {
+  "ext/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
